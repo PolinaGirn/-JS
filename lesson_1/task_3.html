@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang='en' style='background: grey;'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+</head>
+<body>
+    <script>        
+        /*
+        1. 10 + 10 = 20
+        2. к 20 приклеиваем строку 10, получаем 2010
+        */
+        console.log(10 + 10 + '10')
+
+        /*
+        1. 10 + строка 10 = 1010
+        2. к строке 1010 приклеиваем число 10 = 101010
+        */
+        console.log(10 + '10' + 10)
+
+        /*
+        1. 10 + 10 = 20
+        2. +"10" это не строка, а число, поэтому 20 + 10 = 30
+        */
+        console.log(10 + 10 + +'10')
+
+        /*
+        1. -'' = -0
+        2. 10 / -0 = -Infinity
+        */
+        console.log(10 / -'')
+
+        /*
+        1. +'2,5' = NaN, потому что стоит запятая вместо точки
+        2. 10 / NaN = NaN
+        */
+        console.log(10 / +'2,5')
+    </script>
+</body>
+</html>
