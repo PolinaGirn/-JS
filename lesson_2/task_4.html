@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang='en' style='background: grey;'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+</head>
+<body>
+    <script>
+        function sum(a, b){
+            return a + b;
+        }
+
+        function sub(a, b){
+            return a - b;
+        }
+
+        function mult(a, b){
+            return a * b;
+        }
+
+        function div(a, b){
+            return a / b;
+        }
+
+        let a = 5
+        let b = 10
+
+        alert(a + ' + ' + b + ' = ' + sum(a, b))
+        alert(a + ' - ' + b + ' = ' + sub(a, b))
+        alert(a + ' * ' + b + ' = ' + mult(a, b))
+        alert(a + ' / ' + b + ' = ' + div(a, b))
+
+        /*
+        трудностей во время выполнения не возникло
+        У меня есть вопрос. 
+        Нормально ли так создавать функции в части <script></scriрt> в html коде страницы?
+        я имею ввиду прям объявление их -->  function name(args){some code;}  <-- вот это
+        или их лучше писать в отдельном файле js, откуда потом их вызывать, подключая этот файл?
+        я плохо понимаю как тут всё устроено..
+        */
+
+    </script>
+</body>
+</html>
