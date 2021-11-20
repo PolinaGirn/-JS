@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang='en' style='background: grey;'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1.2</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        class Post {
+            constructor(author, text, date) {
+                this.author = author;
+                this.text = text;
+                this.date = date;
+            }
+
+            edit(text) {
+                this.text = text;
+            }
+        }
+
+        class AttachedPost extends Post {
+            constructor(author, text, date) {
+                super(author, text, date);
+                this.highlighted = false;
+            }
+
+            makeTextHighlighted() {
+                this.highlighted = true;
+            }
+        }
+
+        const post1 = new Post('user 1', 'Новости на сегодня', new Date());
+        console.log(post1);
+        post1.edit('мемы про котиков');
+        console.log(post1);
+
+        const attached1 = new AttachedPost('user 2', 'кто прочитал тот', new Date());
+        console.log(attached1);
+        attached1.makeTextHighlighted();
+        attached1.edit('никакого нигатива');
+        console.log(attached1);
+    </script>
+</body>
+</html>
